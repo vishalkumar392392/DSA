@@ -1,0 +1,71 @@
+package com.basic.smart.inteviews;
+
+import java.util.Scanner;
+
+public class FindingCubeRoot {
+
+	public static void main(String[] args) {
+
+//		Scanner sc = new Scanner(System.in);
+//		int size = sc.nextInt();
+//
+//		for (int i = 0; i < size; i++) {
+//			System.out.println(cubeRoot(sc.nextLong()));
+//		}
+
+//		sc.close();
+		System.out.println(squareRoot(625));
+
+		for (long i = 1; i <= 125; i++) {
+			long ans = squareRoot1(i);
+			if (ans > 0 && (ans * ans * ans == i)) {
+				System.out.println(i);
+			}
+		}
+
+	}
+
+	public static long cubeRoot(long num) {
+		return 0;
+	}
+
+	public static long squareRoot(int num) {
+
+		int p1 = 0;
+		int p2 = num;
+		long ans = Integer.MIN_VALUE;
+
+		while (p1 <= p2) {
+			int mid = (p1 + p2) / 2;
+			if (mid * mid == num) {
+				return mid;
+			} else if (mid * mid > num) {
+				p2 = mid - 1;
+			} else {
+				p1 = mid + 1;
+			}
+		}
+
+		return ans;
+	}
+
+	public static long squareRoot1(long num) {
+
+		long p1 = 0;
+		long p2 = num;
+		long ans = Integer.MIN_VALUE;
+
+		while (p1 <= p2) {
+			long mid = (p1 + p2) / 2;
+			if (mid * mid == num) {
+				return mid;
+			} else if (mid * mid > num) {
+				p2 = mid - 1;
+			} else {
+				p1 = mid + 1;
+			}
+		}
+
+		return ans;
+	}
+}

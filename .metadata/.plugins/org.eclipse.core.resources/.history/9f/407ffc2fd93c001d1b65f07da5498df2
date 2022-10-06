@@ -1,0 +1,46 @@
+package com.array.problem;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Scanner;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class Maptest {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int size = sc.nextInt();
+		List<Integer> list = new ArrayList<>();
+
+		for (int i = 0; i < size; i++) {
+			list.add(sc.nextInt());
+		}
+
+		Map<Integer, Long> collect = list.stream()
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+		int qSize = sc.nextInt();
+//		for(int i = 0; i<qSize; i++) {
+//			
+//		}
+		for (int i = 0; i < qSize; i++) {
+//			System.out.println(Objects.nonNull(collect.get(sc.nextInt())) ? collect.get(sc.nextInt()) : 0);
+			System.out.println(collect.get(sc.nextInt()));
+			Long res = collect.get(sc.nextInt());
+			if(res == null) {
+				System.out.println(0);
+			}else {
+				System.out.println(res);
+			}
+
+		}
+
+		sc.close();
+	}
+
+}

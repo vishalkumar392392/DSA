@@ -1,0 +1,16 @@
+package com.basic.smart.inteviews;
+
+public class TestArea {
+
+	public static void main(String[] args) {
+
+		String fulldate = "2022-08-11 14:18:31.0";
+		
+		String[] split = fulldate.split(" ");
+		
+		String date = split[0];
+		System.out.println(date);
+		
+	}
+
+}

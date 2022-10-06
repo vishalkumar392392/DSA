@@ -1,0 +1,36 @@
+package com.basic.smart.inteviews;
+
+public class TestArea {
+
+	public static void main(String[] args) {
+
+		String fulldate = "2022-08-11 14:18:31.0";
+
+		String[] split = fulldate.split(" ");
+
+		String date = split[0];
+		System.out.println(date);
+
+		String[] split2 = date.split("-");
+
+		String modifiedDate = split2[1] + "/" + split2[2] + "/" + split2[0];
+
+		System.out.println(modifiedDate);
+
+		String time = split[1];
+
+		System.out.println(time);
+
+		String[] timeSplit = time.split(":");
+
+		int parseInt = Integer.parseInt(timeSplit[0]);
+
+		int hour = parseInt > 12 ? getHour(parseInt) : parseInt;
+
+	}
+
+	public static int getHour(int hour) {
+		return "";
+	}
+
+}
