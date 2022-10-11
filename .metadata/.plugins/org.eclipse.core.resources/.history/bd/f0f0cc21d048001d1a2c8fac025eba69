@@ -1,0 +1,65 @@
+package com.array.problem;
+
+public class SearchForRange {
+
+	public static void main(String[] args) {
+
+		int A[] = { 5, 7, 7, 8, 8, 10, 10 };
+		int B = 8;
+
+		int p1 = 0;
+		int p2 = A.length;
+
+		while (p1 < p2) {
+			int mid = (p1 + p2) / 2;
+			if (A[mid] == B) {
+				String res = "[";
+				res = res + (mid);
+				if ((mid + 1) < A.length && A[mid + 1] == B) {
+					res = res + ", " + (mid + 1) + "]";
+				}
+				if ((mid - 1) >= 0 && A[mid - 1] == B) {
+					res = res + ", " + (mid - 1) + "]";
+				}
+				System.out.println(res);
+				return;
+
+			}
+			if (A[mid] < B)
+				p1 = mid + 1;
+			if (A[mid] > B)
+				p2 = mid - 1;
+		}
+
+		System.out.println("[-1, -1]");
+	}
+	
+	public int[] searchRange(final int[] A, int B) {
+        int p1 = 0;
+		int p2 = A.length;
+                        int res[] = {-1,-1};
+
+		while (p1 < p2) {
+			int mid = (p1 + p2) / 2;
+			if (A[mid] == B) {
+                res[0] = mid;
+				if ((mid + 1) < A.length && A[mid + 1] == B) {
+                    res[1] = mid+1;
+                    p1 = mid +1;
+				}
+				if ((mid - 1) >= 0 && A[mid - 1] == B) {
+                    res[1] = mid-1;
+                    p2 = mid -1;
+				}
+
+			}
+			if (A[mid] < B)
+				p1 = mid + 1;
+			if (A[mid] > B)
+				p2 = mid - 1;
+		}
+
+		return res;
+    }
+
+}

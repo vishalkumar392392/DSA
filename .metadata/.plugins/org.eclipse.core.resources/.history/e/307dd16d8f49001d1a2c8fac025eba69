@@ -1,0 +1,11 @@
+package com.twopointer.binarysearch;
+
+public class SortZeroAndOne {
+
+	public static void main(String[] args) {
+
+		int arr1[] = { 0, 1, 1, 0, 0, 1, 1, 0, 0, 1 };
+
+	}
+
+}

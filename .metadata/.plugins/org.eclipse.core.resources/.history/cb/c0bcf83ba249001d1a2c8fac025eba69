@@ -1,0 +1,11 @@
+package com.twopointer.binarysearch;
+
+//count the no. of pairs which follow arr[i] > arr[j] and i < j
+public class CountThePairForCondition {
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

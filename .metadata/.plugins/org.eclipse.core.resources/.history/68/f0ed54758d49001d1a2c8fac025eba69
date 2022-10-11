@@ -1,0 +1,43 @@
+package com.twopointer.binarysearch;
+
+public class CombinedSortedArray {
+
+	public static void main(String[] args) {
+
+		int arr1[] = { 4, 7, 9, 11, 15 };
+		int arr2[] = { -5, 3, 5, 16, 20, 25 };
+
+		int temp[] = new int[(arr1.length - 1) + (arr2.length - 1)];
+
+		int p1 = 0;
+		int p2 = 0;
+		int i = 0;
+		while (p1 < arr1.length && p2 < arr2.length) {
+
+			if (arr1[p1] < arr2[p2]) {
+				temp[i] = arr1[p1];
+				p1++;
+			}
+			if (arr1[p1] > arr2[p2]) {
+				temp[i] = arr2[p2];
+				p2++;
+			}
+
+			i++;
+		}
+
+		while (p1 < arr1.length) {
+			temp[i] = arr1[p1];
+		}
+		while (p2 < arr2.length) {
+			temp[i] = arr2[p2];
+		}
+
+		for (int j = 0; j < temp.length; j++) {
+
+			System.out.print(j + " ");
+
+		}
+	}
+
+}
