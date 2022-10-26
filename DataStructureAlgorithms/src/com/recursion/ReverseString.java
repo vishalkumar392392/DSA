@@ -3,10 +3,7 @@ package com.recursion;
 public class ReverseString {
 
 	public static void main(String[] args) {
-		System.out.println(reverse("VISHAL"));
-
-//		String name = "VISHAL";
-//		System.out.println(name.substring(-1, 0));
+		System.out.println(reverse("VEMA"));
 	}
 
 	public static String reverse(String name) {
