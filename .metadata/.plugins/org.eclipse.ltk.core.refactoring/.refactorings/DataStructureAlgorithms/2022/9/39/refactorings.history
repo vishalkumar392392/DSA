@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Extract method &apos;private static void extracted(int [] arr, int j)&apos; from &apos;com.array.BubbleSort.main(...)&apos; to &apos;com.array.BubbleSort&apos;&#x0A;- Original project: &apos;DataStructureAlgorithms&apos;&#x0A;- Method name: &apos;extracted&apos;&#x0A;- Destination type: &apos;com.array.BubbleSort&apos;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;extracted&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.array{BubbleSort.java" name="extracted" replace="false" selection="304 64" stamp="1663585940339" version="1.0" visibility="2"/>
-</session>
