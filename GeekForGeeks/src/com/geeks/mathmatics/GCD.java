@@ -37,6 +37,7 @@ public class GCD {
 	}
 
 	// optimized euclid solution
+	// TC -> log(min(a,b))
 	public static int optEuclidGCD(int a, int b) {
 
 		if (b == 0)
