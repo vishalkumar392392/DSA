@@ -6,6 +6,7 @@ public class CountDigits {
 
 		System.out.println(countDigits(22222));
 		System.out.println(countDigitsLoop(22222));
+		System.out.println(countDigitsLog(22222));
 
 	}
 
@@ -26,6 +27,11 @@ public class CountDigits {
 		}
 
 		return res;
+	}
+
+	public static int countDigitsLog(int num) {
+
+		return (int) Math.floor(Math.log10(num)) + 1;
 	}
 
 }
