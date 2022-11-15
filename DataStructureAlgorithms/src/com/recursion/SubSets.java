@@ -6,6 +6,7 @@ public class SubSets {
 		subSets("hetvi", "", 0);
 		System.out.println("==========================================");
 		subSetsApproach("hetvi", "", "hetvi".length());
+		
 	}
 
 	public static void subSets(String s, String curr, int i) {
@@ -32,5 +33,6 @@ public class SubSets {
 
 	}
 
+	
 
 }
