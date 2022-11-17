@@ -5,7 +5,7 @@ public class SeiveOfEratosthenes {
 
 	public static void main(String[] args) {
 
-		seive(125);
+		seive(179424673);
 	}
 
 	// TC -> O(nloglogn)
