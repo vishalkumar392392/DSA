@@ -1,4 +1,4 @@
-package com.recursion;
+package com.geeks.recursion;
 
 public class PermutationOfString {
 

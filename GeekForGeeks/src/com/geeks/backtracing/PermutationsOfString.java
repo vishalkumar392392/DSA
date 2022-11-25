@@ -1,10 +1,9 @@
-package com.recursion;
+package com.geeks.backtracing;
 
-public class PermutationOfString {
+public class PermutationsOfString {
 
 	public static void main(String[] args) {
 		permutations("ABCD", 0);
-
 	}
 
 	public static void permutations(String s, int i) {
