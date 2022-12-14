@@ -4,7 +4,7 @@ public class FrequencyInSortedArray {
 
 	public static void main(String[] args) {
 
-		int arr[] = { 10, 10, 10, 25, 30, 30 };
+		int arr[] = { 40, 50, 50, 50 };
 		frequencyInSortedArray(arr);
 	}
 
