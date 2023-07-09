@@ -3,17 +3,18 @@ package com.geeks.recursion;
 public class ReverseString {
 
 	public static void main(String[] args) {
-		System.out.println(reverse("VEMA"));
+		reverse("GAYATHRI");
+
 	}
 
-	public static String reverse(String name) {
+	public static void reverse(String name) {
 
 		if (name.length() == 0) {
-			return "";
+			return;
 		}
 		System.out.print(name.charAt(name.length() - 1));
 
-		return reverse(name.substring(0, name.length() - 1));
+		reverse(name.substring(0, name.length() - 1));
 	}
 
 }
