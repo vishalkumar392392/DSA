@@ -1,6 +1,9 @@
 package com.week1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.stream.Collectors;
 
 public class Test {
 
@@ -15,7 +18,19 @@ public class Test {
 
 
 		songs.list.forEach(System.out::println);
+		
+		String name = "vishal";
+		
+		char[] charArray = name.toCharArray();
+		Arrays.sort(charArray);
+		int count[] = new int[200];
+		System.out.println((int)name.charAt(0));
+		count[name.charAt(0)]++;
+		System.out.println(count[118]);
+		System.out.println((char)(0+'a'));
+	
 	}
+		
 
 }
 
