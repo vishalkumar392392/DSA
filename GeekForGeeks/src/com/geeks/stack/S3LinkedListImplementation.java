@@ -1,6 +1,6 @@
 package com.geeks.stack;
 
-import com.greeks.linkedList.Node;
+import com.geeks.linkedList.Node;
 
 public class S3LinkedListImplementation {
 
